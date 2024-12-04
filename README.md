@@ -12,8 +12,12 @@ For all belwo process you have to clone only this repo  "https://github.com/anku
    ```bash
    git clone <repository_url>
    cd <repository_name>
-
+cd helloworld
 docker build -t hello-world-app .
+
+docker tag hello-world-app:latest ankushdockerhub/helloworld:helloworldv1
+
+docker push ankushdockerhub/helloworld:helloworldv1
 
 docker run -p 8080:8080 --env MYSQL_SERVER=<server> \
                          --env MYSQL_USER=<user> \
@@ -40,6 +44,8 @@ az ad sp create-for-rbac --name 'sp-terraform' --role="Contributor" --scopes="/s
 
 Create and edit the main.tf file:
 clone the file from git clone https://github.com/ankushbahale24/helloworld/ 
+
+cd helloworld/AKS
 
 vi main.tf
 
@@ -83,7 +89,7 @@ helm version
 
 Step 2: Initialize Your Helm Chart
 
-cd helm-chart/
+helloworld/Helm charts/
 
 Perform a dry run to validate the Helm templates:
 
