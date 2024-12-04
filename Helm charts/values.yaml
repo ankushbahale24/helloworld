@@ -1,0 +1,5 @@
+mysql:
+  server: "mysql"
+  user: "root"
+  password: "securepassword"  # Base64 encode this in Secret
+  db: "hello_world"
