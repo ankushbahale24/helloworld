@@ -1,3 +1,5 @@
+For all belwo process you have to clone only this repo 
+
 # Hello World Application
 
 ## Prerequisites
@@ -37,6 +39,7 @@ az ad sp create-for-rbac --name 'sp-terraform' --role="Contributor" --scopes="/s
 *Step 3: Deploy AKS Cluster Using Terraform
 
 Create and edit the main.tf file:
+clone the file from git clone https://github.com/ankushbahale24/helloworld/ 
 
 vi main.tf
 
